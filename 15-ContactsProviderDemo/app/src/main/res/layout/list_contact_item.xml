@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/thumb_image_view"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/name_text_view"
+        app:srcCompat="@drawable/user"/>
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:text="name"
+        app:layout_constraintBottom_toBottomOf="@+id/thumb_image_view"
+        app:layout_constraintLeft_toRightOf="@+id/thumb_image_view"
+        app:layout_constraintTop_toTopOf="@+id/thumb_image_view"
+        app:layout_constraintRight_toLeftOf="@+id/phone_nums_text_view"
+        />
+
+    <TextView
+        android:id="@+id/phone_nums_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:text="phone_nums"
+        app:layout_constraintBottom_toBottomOf="@+id/name_text_view"
+        app:layout_constraintLeft_toRightOf="@+id/name_text_view"
+        app:layout_constraintRight_toLeftOf="@+id/remove_image_view"
+        app:layout_constraintTop_toTopOf="@+id/name_text_view"
+        />
+
+
+    <ImageView
+        android:id="@+id/remove_image_view"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/thumb_image_view"
+        app:layout_constraintLeft_toRightOf="@+id/phone_nums_text_view"
+        app:layout_constraintTop_toTopOf="@+id/thumb_image_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/remove"/>
+</android.support.constraint.ConstraintLayout>

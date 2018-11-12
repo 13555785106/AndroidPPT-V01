@@ -1,0 +1,19 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ListPreference
+        android:defaultValue="180"
+        android:entries="@array/pref_sync_frequency_titles"
+        android:entryValues="@array/pref_sync_frequency_values"
+        android:key="pref_sync_frequency"
+        android:title="@string/pref_title_sync_frequency"
+        android:summary="设置系统后台的刷新频率"/>
+
+    <MultiSelectListPreference
+        android:defaultValue="@array/pref_default_foods"
+        android:entries="@array/pref_foods"
+        android:entryValues="@array/pref_foods"
+        android:key="pref_favorite_food"
+        android:summary="选择你喜欢的食物"
+        android:title="@string/pref_favorite_food"/>
+</PreferenceScreen>

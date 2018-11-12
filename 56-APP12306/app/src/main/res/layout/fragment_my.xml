@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.sample.app12306.MainFragment">
+
+    <Button
+        android:id="@+id/button_personal_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="个人资料"/>
+
+    <Button
+        android:id="@+id/button_change_passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改密码"/>
+
+    <Button
+        android:id="@+id/button_passengers_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="维护乘客信息"/>
+
+    <Button
+        android:id="@+id/button_preference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="偏好设置"/>
+
+    <Button
+        android:id="@+id/button_quit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出"/>
+</LinearLayout>

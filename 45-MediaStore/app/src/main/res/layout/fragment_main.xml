@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:columnCount="2"
+    tools:context="com.telecom.mediastore.MainActivity">
+
+    <Button
+        android:id="@+id/button_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="读取"
+        app:layout_columnWeight="1"/>
+
+    <Button
+        android:id="@+id/button_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="存储"
+        app:layout_columnWeight="1"/>
+
+
+</android.support.v7.widget.GridLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Camera2Video</string>
+    <string name="intro_message">
+        <![CDATA[
+            这个例子演示了如何使用Camera2 API摄制录像.
+        ]]>
+    </string>
+    <string name="record">录像</string>
+    <string name="stop">停止</string>
+    <string name="description_info">信息</string>
+    <string name="permission_request">这个例子需要摄像和音频录制权限.</string>
+    <string name="camera_error">这个设备不支持 Camera2 API.</string>
+</resources>

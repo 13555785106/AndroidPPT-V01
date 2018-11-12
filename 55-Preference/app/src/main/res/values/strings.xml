@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">偏好设置Demo</string>
+    <string name="action_settings">设置</string>
+    <string-array name="user_age_group_entries">
+        <item>1-20</item>
+        <item>20-40</item>
+        <item>40-60</item>
+        <item>60-80</item>
+        <item>80-100</item>
+    </string-array>
+    <string-array name="user_age_group_entryvalues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

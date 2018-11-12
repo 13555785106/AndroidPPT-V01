@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/user_16"
+        android:ems="10"
+        android:hint="请输入姓名"
+        android:inputType="textPersonName"
+        android:text=""
+        />
+
+    <EditText
+        android:id="@+id/phone_nums_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/phone_16"
+        android:ems="10"
+        android:hint="请输入电话"
+        android:inputType="phone"
+        android:text=""
+        />
+
+</LinearLayout>

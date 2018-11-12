@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <EditTextPreference
+        android:icon="@drawable/administrator_25"
+        android:key="edit_text_preference_account"
+        android:summary="设置登录时使用的账号"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="账号"/>
+    <EditTextPreference
+        android:icon="@drawable/lock_25"
+        android:key="edit_text_preference_passwd"
+        android:summary="设置登录时使用的密码"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="密码"/>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:summary="设置是否自动登录进入系统"
+        android:key="check_box_preference_auto_login"
+        android:title="自动登录"/>
+</PreferenceScreen>

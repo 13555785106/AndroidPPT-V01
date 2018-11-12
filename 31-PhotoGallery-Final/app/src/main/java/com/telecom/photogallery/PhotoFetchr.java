@@ -1,0 +1,103 @@
+package com.telecom.photogallery;
+
+import android.net.Uri;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.CookieHandler;
+import java.net.CookieManager;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+/**
+ * Created by xiaojf on 18/1/7.
+ */
+
+public final class PhotoFetchr {
+    private PhotoFetchr() {
+    }
+
+    public static void initCookieManager(){
+        CookieManager manager = new CookieManager();
+        CookieHandler.setDefault(manager);
+    }
+
+    public static byte[] getUrlBytes(String urlSpec) throws IOException {
+        URL url = new URL(urlSpec);
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+        try {
+            ByteArrayOutputStream out = new ByteArrayOutputStream();
+            InputStream in = connection.getInputStream();
+            if (connection.getResponseCode() != HttpURLConnection.HTTP_OK) {
+                throw new IOException(connection.getResponseMessage() +
+                        ": with " +
+                        urlSpec);
+            }
+            int bytesRead = 0;
+            byte[] buffer = new byte[1024];
+            while ((bytesRead = in.read(buffer)) > 0) {
+                out.write(buffer, 0, bytesRead);
+            }
+            out.close();
+            return out.toByteArray();
+        } finally {
+            connection.disconnect();
+        }
+    }
+
+    public static String getUrlString(String urlSpec, String charsetName) throws IOException {
+        return new String(getUrlBytes(urlSpec), charsetName);
+    }
+
+    public static PhotoResult fetchPhotoItems(String urlSpec, String qName, String charsetName) {
+        if (qName == null)
+            qName = "";
+        Uri uri = Uri.parse(urlSpec).buildUpon()
+                .appendQueryParameter("name", qName)
+                .build();
+
+        PhotoResult photoResult = new PhotoResult();
+        try {
+            String result = PhotoFetchr.getUrlString(uri.toString(), charsetName);
+            JSONObject jsonObject = new JSONObject(result);
+            photoResult.setItemCount(jsonObject.getInt("itemCount"));
+            photoResult.setPageCount(jsonObject.getInt("pageCount"));
+            photoResult.setPageNo(jsonObject.getInt("pageNo"));
+            photoResult.setPageSize(jsonObject.getInt("pageSize"));
+
+            JSONArray jsonDatas = jsonObject.getJSONArray("datas");
+            for (int i = 0; i < jsonDatas.length(); i++) {
+                jsonObject = jsonDatas.getJSONObject(i);
+                PhotoItem photoItem = new PhotoItem();
+                photoItem.setId(jsonObject.getLong("id"));
+                photoItem.setName(jsonObject.getString("name"));
+                photoItem.setUrl(jsonObject.getString("url"));
+                photoResult.getDatas().add(photoItem);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return photoResult;
+    }
+
+    public static boolean login(String urlSpec, String username,String password){
+        Uri uri = Uri.parse(urlSpec).buildUpon()
+                .appendQueryParameter("username", username)
+                .appendQueryParameter("password", password)
+                .build();
+        try {
+            String result = PhotoFetchr.getUrlString(uri.toString(), "utf-8");
+            System.out.println(result);
+            JSONObject jsonObject = new JSONObject(result);
+            return jsonObject.getBoolean("validated");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+}

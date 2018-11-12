@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GeoQuiz</string>
+    <string name="true_button">是</string>
+    <string name="false_button">否</string>
+    <string name="correct_toast">正确</string>
+    <string name="incorrect_toast">错误</string>
+    <string name="next_button">下一个</string>
+
+    <string name="question_australia">1.堪培拉是澳大利亚的首都.</string>
+    <string name="question_oceans">2.太平洋比大西洋大.</string>
+    <string name="question_mideast">3.苏伊士运河连接红海和印度洋.</string>
+    <string name="question_africa">4.尼罗河的源头在埃及.</string>
+    <string name="question_americas">5.亚马逊河美洲最大的河.</string>
+    <string name="question_asia">6.贝加尔湖是世界上最老最深的湖.</string>
+    <string name="question_beijing">7.北京是中国的首都.</string>
+    <string name="question_shenyang">8.沈阳是辽宁省会.</string>
+</resources>

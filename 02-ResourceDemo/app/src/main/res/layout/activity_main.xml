@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.telecom.resourcedemo.MainActivity">
+
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/grid_layout_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="0dp"
+        app:columnCount="4"
+        app:layout_constraintBottom_toTopOf="@+id/grid_layout_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="0.5">
+
+
+        <Button
+            android:id="@+id/button_a"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawableStart="@drawable/travel_airplane_64"
+            android:text="@string/button_a"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/button_b"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawableEnd="@drawable/travel_alpha_romeo_64"
+            android:text="@string/button_b"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/button_c"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawableTop="@drawable/travel_bicycle_64"
+            android:text="@string/button_c"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1.5"/>
+
+        <Button
+            android:id="@+id/button_d"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:drawableBottom="@drawable/travel_bmw_64"
+            android:text="@string/button_d"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1.5"/>
+
+        <ImageButton
+            android:id="@+id/image_button_a"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/image_button_a"
+            android:scaleType="fitCenter"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/eagle_256"/>
+
+        <ImageButton
+            android:id="@+id/image_button_b"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/image_button_b"
+            android:scaleType="fitCenter"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/horses_256"/>
+
+        <ImageButton
+            android:id="@+id/image_button_c"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/image_button_c"
+            android:scaleType="fitCenter"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/girls_blue_dress_256"/>
+
+        <ImageButton
+            android:id="@+id/image_button_d"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/image_button_d"
+            android:scaleType="fitCenter"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            app:srcCompat="@drawable/girls_red_dress_256"/>
+    </android.support.v7.widget.GridLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/grid_layout_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/darker_gray"
+        app:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid_layout_1"
+        app:layout_constraintVertical_weight="0.5"
+        >
+
+        <Button
+            android:id="@+id/button_e"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_e"
+            android:background="@drawable/rectangle_01"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/button_f"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_f"
+            android:background="@drawable/rectangle_02"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/button_g"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_g"
+            android:background="@drawable/rectangle_03"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/button_h"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_h"
+            android:background="@drawable/rectangle_04"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/button_i"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_i"
+            android:background="@drawable/oval_01"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/button_j"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_j"
+            android:background="@drawable/oval_02"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/button_k"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_k"
+            android:background="@drawable/ring_01"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/button_l"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_l"
+            android:background="@drawable/ring_02"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/button_m"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/my_margin_left"
+            android:layout_marginRight="@dimen/my_margin_right"
+            android:layout_marginTop="@dimen/my_margin_top"
+            android:layout_marginBottom="@dimen/my_margin_bottom"
+            android:background="@drawable/rectangle_05"
+            android:text="@string/button_m"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/button_n"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/my_margin"
+            android:text="@string/button_n"
+            android:background="@drawable/rectangle_06"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/button_o"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_o"
+            android:background="@drawable/oval_03"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:id="@+id/button_p"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/button_p"
+            android:background="@drawable/ring_03"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+
+        <TextView
+            android:id="@+id/msg_text_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            app:layout_columnSpan="4"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"/>
+    </android.support.v7.widget.GridLayout>
+</android.support.constraint.ConstraintLayout>

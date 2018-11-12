@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">资源定义示例</string>
+
+    <string name="button_a">按钮 A</string>
+    <string name="button_b">按钮 B</string>
+    <string name="button_c">按钮 C</string>
+    <string name="button_d">按钮 D</string>
+
+    <string name="button_e">按钮 E</string>
+    <string name="button_f">按钮 F</string>
+    <string name="button_g">按钮 G</string>
+    <string name="button_h">按钮 H</string>
+
+    <string name="button_i">按钮 I</string>
+    <string name="button_j">按钮 J</string>
+    <string name="button_k">按钮 K</string>
+    <string name="button_l">按钮 L</string>
+
+    <string name="button_m">按钮 M</string>
+    <string name="button_n">按钮 N</string>
+    <string name="button_o">按钮 O</string>
+    <string name="button_p">按钮 P</string>
+    <string name="image_button_a">图片按钮 A</string>
+    <string name="image_button_b">图片按钮 B</string>
+    <string name="image_button_c">图片按钮 C</string>
+    <string name="image_button_d">图片按钮 D</string>
+    <string-array name="countries">
+        <item>中国</item>
+        <item>美国</item>
+        <item>日本</item>
+        <item>德国</item>
+        <item>法国</item>
+        <item>英国</item>
+    </string-array>
+</resources>

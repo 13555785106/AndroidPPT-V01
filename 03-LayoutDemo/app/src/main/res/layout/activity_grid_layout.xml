@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:columnCount="1"
+    tools:context="com.telecom.layoutdemo.GridLayoutActivity">
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:scaleType="fitCenter"
+        app:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/airplane_512"/>
+
+    <EditText
+        android:id="@+id/account_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:drawableLeft="@drawable/user_32"
+        android:ems="10"
+        android:hint="请输入账号"
+        tools:text="请输入账号"/>
+
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:drawableLeft="@drawable/key_32"
+        android:ems="10"
+        android:hint="请输入密码"
+        tools:text="请输入密码"/>
+
+    <CheckBox
+        android:id="@+id/auto_login_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:checked="true"
+        android:text="自动登录"
+        app:layout_gravity="right"/>
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:text="登录"/>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        app:columnCount="3"
+        app:layout_gravity="center"
+        app:rowCount="3">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="0"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="0"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="1"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_column="1"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowSpan="2"
+            app:layout_rowWeight="1"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="2"/>
+    </android.support.v7.widget.GridLayout>
+</android.support.v7.widget.GridLayout>

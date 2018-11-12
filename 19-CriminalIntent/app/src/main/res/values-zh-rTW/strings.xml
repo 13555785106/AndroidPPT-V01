@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CriminalIntent</string>
+    <string name="crime_title_hint">請為陋習輸入一個標題</string>
+    <string name="crime_title_label">標題</string>
+    <string name="crime_details_label">詳細信息</string>
+    <string name="crime_solved_label">已處理</string>
+    <string name="date_picker_title">日期</string>
+    <string name="new_crime">新建</string>
+    <string name="show_subtitle">顯示子標題</string>
+    <string name="hide_subtitle">隱藏子標題</string>
+    <string name="subtitle_format">%1$s crimes</string>
+    <string name="crime_suspect_text">選擇嫌疑人</string>
+    <string name="crime_report_text">發送陋習信息</string>
+    <string name="crime_report">%1$s!crime發生於 %2$s. %3$s, y %4$s</string>
+    <string name="crime_report_solved">問題已解決</string>
+    <string name="crime_report_unsolved">問題未解決</string>
+    <string name="crime_report_no_suspect">沒找到嫌疑人</string>
+    <string name="crime_report_suspect">嫌疑人是 %s</string>
+    <string name="crime_report_subject">crime处理情况报告</string>
+    <string name="send_report">投訴方式</string>
+</resources>

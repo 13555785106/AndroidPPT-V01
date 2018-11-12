@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--
+    如果有空间，菜单项的文字和图标都显示出来
+    -->
+    <item
+        android:id="@+id/new_crime"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/new_crime"
+        app:showAsAction="ifRoom|withText"/>
+    <!--
+    如果有空间，菜单项显示出来
+    -->
+    <item
+        android:id="@+id/show_subtitle"
+        android:icon="@drawable/eye_visible"
+        android:title="@string/show_subtitle"
+        app:showAsAction="ifRoom"/>
+</menu>

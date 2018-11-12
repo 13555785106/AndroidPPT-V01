@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="自动登录">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="auto_login"
+            android:summary="账号和密码正确的前提下自动登录"
+            android:title="自动登录"/>
+        <EditTextPreference
+            android:dialogTitle="账号"
+            android:key="user_account"
+            android:summary="登录系统使用的账号"
+            android:title="账号"/>
+        <EditTextPreference
+            android:dialogTitle="密码"
+            android:key="user_passwd"
+            android:summary="登录系统使用的密码"
+            android:title="密码"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="个人信息">
+
+        <EditTextPreference
+            android:dialogTitle="姓名"
+            android:key="user_name"
+            android:summary="个人姓名的全名"
+            android:title="姓名"/>
+
+        <ListPreference
+            android:dialogTitle="年龄段"
+            android:entries="@array/user_age_group_entries"
+            android:entryValues="@array/user_age_group_entryvalues"
+            android:key="user_age_group"
+            android:summary="选择您的年龄段"
+            android:title="年龄段"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="联系方式">
+        <PreferenceScreen
+            android:fragment="com.sample.preference.PreferenceWithHeadersActivity$Prefs1FragmentInner"
+            android:key="user_linkinfo"
+            android:summary="设置详细的地址信息"
+            android:title="联系地址">
+            <extra
+                android:name="someKey"
+                android:value="somePrefValue"/>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:summary="访问网易获取详细信息"
+            android:title="访问网易">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.android.com"/>
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="个人喜好">
+
+        <CheckBoxPreference
+            android:key="has_hobbies"
+            android:summary="是否设置自己的喜好"
+            android:title="设置喜好"/>
+        <CheckBoxPreference
+            android:dependency="has_hobbies"
+            android:key="hooby_football"
+            android:title="足球"
+            />
+        <CheckBoxPreference
+            android:dependency="has_hobbies"
+            android:key="hooby_basketball"
+            android:title="篮球"
+            />
+    </PreferenceCategory>
+    <Preference
+        android:fragment="com.sample.preference.PreferenceWithHeadersActivity$AboutFragment"
+        android:summary="Android 9.0"
+        android:title="关于"/>
+
+</PreferenceScreen>

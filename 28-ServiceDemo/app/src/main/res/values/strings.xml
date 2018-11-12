@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">28-ServiceDemo</string>
+    <string name="title_activity_aidl">AidlActivity</string>
+</resources>

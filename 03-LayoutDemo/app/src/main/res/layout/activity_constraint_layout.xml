@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.telecom.layoutdemo.ConstraintLayoutActivity">
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="96dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/airplane_512"/>
+
+    <EditText
+        android:id="@+id/account_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/user_32"
+        android:ems="10"
+        android:hint="请输入账号"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_image_view"
+        tools:text="请输入账号"/>
+
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/key_32"
+        android:ems="10"
+        android:hint="请输入密码"
+        app:layout_constraintLeft_toLeftOf="@+id/account_edit_text"
+        app:layout_constraintRight_toRightOf="@+id/account_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/account_edit_text"
+        tools:text="请输入密码"/>
+
+    <CheckBox
+        android:id="@+id/auto_login_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="自动登录"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/account_edit_text"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/password_edit_text"
+        android:layout_marginEnd="8dp"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/auto_login_check_box"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/account_edit_text"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/account_edit_text"
+        app:layout_constraintHorizontal_bias="0.0"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sample.runtimepermissions">
+
+    <!-- BEGIN_INCLUDE(manifest) -->
+
+    <!--
+    所有需要的权限在此处声明，但在Android M及其以上版本，这些权限需要在运行时进行申请. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!--下面的权限仅需要在Android M及其以上版本申请，在其以下版本这些权限不需要申请或者不可用.-->
+    <uses-permission-sdk-23 android:name="android.permission.READ_CONTACTS" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_CONTACTS" />
+
+    <!-- END_INCLUDE(manifest) -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+
+</manifest>

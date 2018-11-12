@@ -1,0 +1,19 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.sample.app12306.my.SettingsActivity$LoginPreferenceFragment"
+        android:icon="@drawable/ic_login_settings"
+        android:summary="设置登录的账号、密码、自动登录等"
+        android:title="登录设置"/>
+
+    <header
+        android:fragment="com.sample.app12306.my.SettingsActivity$NotificationPreferenceFragment"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:summary="设置有新消息时的铃声等"
+        android:title="@string/pref_header_notifications"/>
+    <header
+        android:fragment="com.sample.app12306.my.SettingsActivity$OthersPreferenceFragment"
+        android:title="其它设置"/>
+</preference-headers>

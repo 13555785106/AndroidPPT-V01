@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.telecom.layoutdemo.TabLayoutActivity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_item_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tab_0"/>
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_item_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tab_1"/>
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_item_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tab_2"/>
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_item_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tab_3"/>
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tab_item_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tab_4"/>
+    </android.support.design.widget.TabLayout>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/bird_00"/>
+
+</LinearLayout>

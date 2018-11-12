@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="picture">拍照</string>
+    <string name="description_info">信息</string>
+    <string name="request_permission">这个例子需要相机权限.</string>
+    <string name="camera_error">这个设备不支持Camera2 API.</string>
+</resources>

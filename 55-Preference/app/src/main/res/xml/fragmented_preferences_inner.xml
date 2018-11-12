@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="user_province"
+        android:singleLine="true"
+        android:summary="设置所在的省份"
+        android:title="省份"/>
+    <EditTextPreference
+        android:key="user_city"
+        android:singleLine="true"
+        android:summary="设置所在的城市"
+        android:title="城市"/>
+    <EditTextPreference
+        android:key="user_zip_code"
+        android:singleLine="true"
+        android:summary="设置邮政编码"
+        android:title="邮编"/>
+</PreferenceScreen>

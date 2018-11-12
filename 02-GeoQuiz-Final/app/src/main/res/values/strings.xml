@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GeoQuiz</string>
+    <string name="question_text">上海是中国的城市吗？</string>
+    <string name="true_button">是</string>
+    <string name="false_button">否</string>
+    <string name="correct_toast">正确</string>
+    <string name="incorrect_toast">错误</string>
+</resources>

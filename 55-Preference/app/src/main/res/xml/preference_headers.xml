@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header
+        android:fragment="com.sample.preference.PreferenceWithHeadersActivity$Prefs1Fragment"
+        android:summary="设置登录有关的信息"
+        android:title="登录设置"/>
+
+    <header
+        android:fragment="com.sample.preference.PreferenceWithHeadersActivity$Prefs2Fragment"
+        android:summary="设置一些其它选项"
+        android:title="其它设置">
+        <extra
+            android:name="someKey"
+            android:value="someHeaderValue"/>
+    </header>
+
+    <header
+        android:summary="通过发送Intent打开某个Activity"
+        android:title="Intent">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://www.163.com"/>
+    </header>
+
+</preference-headers>

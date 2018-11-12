@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OrderedBroadcastReceiver</string>
+    <string name="action_settings">Settings</string>
+    <string name="send_ordered_broadcast_text">发送广播</string>
+</resources>

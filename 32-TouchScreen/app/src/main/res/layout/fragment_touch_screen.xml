@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:columnCount="1"
+    tools:context="com.telecom.touchscreen.TouchScreenActivity">
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:textAllCaps="false"
+        android:text="MotionEvent"/>
+    <Button
+        android:id="@+id/button_2"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="一般手势"/>
+    <Button
+        android:id="@+id/button_3"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="捏合手势"/>
+
+</GridLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:columnCount="3"
+    tools:context="com.telecom.layoutdemo.LayoutActivity">
+
+
+    <Button
+        android:id="@+id/button_linear_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="线性布局\nLinearLayout"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        />
+
+
+    <Button
+        android:id="@+id/button_frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="帧式布局\nFrameLayout"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+
+    <Button
+        android:id="@+id/button_relative_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="相对布局\nRelativeLayout"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+
+    <Button
+        android:id="@+id/button_constraint_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="约束布局\nConstraint\nLayout"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+
+    <Button
+        android:id="@+id/button_table_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="表格布局\nTableLayout"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+
+    <Button
+        android:id="@+id/button_grid_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="网格布局\nGridLayout"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+    <Button
+        android:id="@+id/button_tab_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="标签布局\nTabLayout"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_columnSpan="3"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:srcCompat="@drawable/layout_256"/>
+
+
+</android.support.v7.widget.GridLayout>

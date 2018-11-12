@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:columnCount="2"
+    tools:context="com.telecom.handlerlooperdemo.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        app:srcCompat="@drawable/calculator_128"/>
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:drawableRight="@drawable/start_24"
+        android:text="启动"
+        app:layout_columnWeight="1"/>
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:drawableLeft="@drawable/stop_24"
+        android:enabled="false"
+        android:text="停止"
+        app:layout_columnWeight="1"/>
+
+    <TextView
+        android:id="@+id/msg_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        tools:text=""/>
+
+    <LinearLayout
+        android:id="@+id/calculator_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_columnSpan="2"
+        app:layout_gravity="center_horizontal"
+        tools:visibility="visible">
+
+        <EditText
+            android:id="@+id/first_value_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/num_24"
+            android:drawableRight="@drawable/num_24"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="请输入第一个数"
+            android:inputType="numberDecimal"
+            android:text="8"
+            />
+
+
+        <RadioGroup
+            android:id="@+id/operator_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/add_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="加"/>
+
+            <RadioButton
+                android:id="@+id/sub_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="减"/>
+
+            <RadioButton
+                android:id="@+id/mul_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="乘"/>
+
+            <RadioButton
+                android:id="@+id/div_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="除"/>
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/second_value_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/num_24"
+            android:drawableRight="@drawable/num_24"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="请输入第二个数"
+            android:inputType="numberDecimal"
+            android:text="9"
+            />
+
+        <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="结果"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="求值"/>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.GridLayout>

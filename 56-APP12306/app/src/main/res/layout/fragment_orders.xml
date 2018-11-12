@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sample.app12306.MainFragment">
+
+    <TextView
+        android:id="@+id/text_view_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5f7918"
+        android:drawableLeft="@drawable/green_ticket_icon"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="未出行订单"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_not_travelled_orders"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+
+    <TextView
+        android:id="@+id/text_view_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5f7918"
+        android:drawableLeft="@drawable/yellow_ticket_icon"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="已出行订单"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_already_travelled_orders"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

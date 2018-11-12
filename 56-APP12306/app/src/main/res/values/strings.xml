@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">12306</string>
+    <string name="login_title">登  录</string>
+    <string name="auto_login_text">自动登录</string>
+    <string name="lost_passwd_text">忘记密码?</string>
+    <string name="button_skip_text">跳过(剩余 %d 秒)</string>
+    <string name="query_text">查  询</string>
+    <string name="date_picker_title">日  期</string>
+
+    <string name="title_activity_settings">设置</string>
+
+
+    <string name="pref_header_notifications">通知</string>
+
+    <string name="pref_title_new_message_notifications">新消息通知</string>
+
+    <string name="pref_title_ringtone">铃声</string>
+    <string name="pref_ringtone_silent">静音</string>
+
+    <string name="pref_title_vibrate">振动</string>
+
+    <string name="pref_title_sync_frequency">刷新频率</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>1小时</item>
+        <item>3小时</item>
+        <item>6小时</item>
+        <item>从不</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_favorite_food">喜欢的美食</string>
+    <string-array name="pref_default_foods">
+        <item>鸡腿</item>
+        <item>鸭腿</item>
+    </string-array>
+    <string-array name="pref_foods">
+        <item>鸡腿</item>
+        <item>鸭腿</item>
+        <item>狗腿</item>
+        <item>苹果</item>
+        <item>鸭梨</item>
+        <item>荔枝</item>
+    </string-array>
+
+</resources>

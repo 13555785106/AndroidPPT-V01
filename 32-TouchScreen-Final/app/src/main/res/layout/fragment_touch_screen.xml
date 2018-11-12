@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:columnCount="3"
+    tools:context="com.telecom.touchscreen.TouchScreenActivity">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="3"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:text="课堂示例"/>
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:textAllCaps="false"
+        android:text="MotionEvent"/>
+    <Button
+        android:id="@+id/button_2"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:text="一般手势"/>
+    <Button
+        android:id="@+id/button_3"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:text="捏合手势"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="3"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:text="练习示例"/>
+
+    <Button
+        android:id="@+id/button_4"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:textAllCaps="false"
+        android:text="路径长度"/>
+    <Button
+        android:id="@+id/button_5"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:text="旋转角度"/>
+    <Button
+        android:id="@+id/button_6"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:text="滑动图片"/>
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="3"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        app:srcCompat="@drawable/girl_motivated_icon"/>
+
+</GridLayout>

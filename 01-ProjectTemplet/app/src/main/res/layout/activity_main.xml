@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    app:columnCount="1"
+    tools:context="com.telecom.projecttemplet.MainActivity">
+
+
+    <Button
+        android:id="@+id/button_empty_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="EmptyActivity"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"/>
+
+    <Button
+        android:id="@+id/button_basic_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BasicActivity"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"/>
+
+    <Button
+        android:id="@+id/button_bottom_navigation_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BottomNavigationActivity"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"/>
+
+    <Button
+        android:id="@+id/button_fullscreen_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="FullscreenActivity"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"/>
+
+    <Button
+        android:id="@+id/button_master_detail_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="MasterDetailActivity"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"/>
+
+    <Button
+        android:id="@+id/button_navigation_drawer_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="NavigationDrawerActivity"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"/>
+
+    <Button
+        android:id="@+id/button_scrolling_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ScrollingActivity"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"/>
+
+    <Button
+        android:id="@+id/button_settings_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SettingsActivity"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"/>
+
+    <Button
+        android:id="@+id/button_tabbed_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TabbedActivity"
+        android:textAllCaps="false"
+        app:layout_columnWeight="1"/>
+</android.support.v7.widget.GridLayout>
