@@ -78,11 +78,11 @@ public class QuizActivity extends AppCompatActivity {
         Toast.makeText(this, messageResId, Toast.LENGTH_SHORT)
                 .show();
     }
-
+//
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        Log.i(TAG, "onSaveInstanceState called");
+        Log.d(TAG, "onSaveInstanceState called");
         outState.putInt(KEY_INDEX, mCurrentIndex);
     }
 
